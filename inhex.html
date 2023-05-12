@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Leads View</title>
+	</head>
+	<body>
+		<header>
+			<h1>Leads List View</h1>
+		</header>
+		<main>
+			<div id="app">
+				<div id="popup">Number copied</div>
+				<div class="test-action">
+					<h3 id="list-count"></h3>
+					<input type="file" id="file-input" />
+					<p id="input-notes" class="text-center">Upload your local file</p>
+					<div id="text-box" class="text-box">
+						<div>
+							<input type="number" class="form-control" id="max-phones" min="2" max="99" value="10" />
+							<button id="txt-btn" class="btn btn-primary">Get list fot TXT</button>
+						</div>
+						<span type="te" id="print-numbers" class="num-to-txt"></span>
+					</div>
+				</div>
+				<div id="carrier-list" class="container">
+					<h2>Companies</h2>
+					<table class="table">
+						<thead>
+							<tr class="my-table">
+								<th>Num</th>
+								<th>Company Name</th>
+								<th>Phone</th>
+								<th>Email</th>
+								<th>Address</th>
+								<th>Join Date</th>
+							</tr>
+						</thead>
+						<tbody id="companies-table-body"></tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>Created and Developed by DJ_Poltava (Wade/Watts)</p>
+		</footer>
+		<script type="module" src="skcipt.js"></script>
+	</body>
+</html>

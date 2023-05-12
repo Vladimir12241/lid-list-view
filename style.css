@@ -1,0 +1,111 @@
+/* CSS reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	flex: 1;
+}
+
+/* mail styles */
+header {
+	display: flex;
+	justify-content: center;
+	margin: 8px;
+}
+
+.test-action {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.test-action > * {
+	margin: 4px;
+}
+.text-box {
+	width: 90%;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+}
+
+.num-to-txt {
+	margin: 15px;
+	display: block;
+	border: 1px solid;
+	padding: 10px 15px;
+	display: none;
+}
+
+.container {
+	width: 100%;
+	display: none;
+	flex-direction: column;
+	align-items: stretch;
+	flex-wrap: nowrap;
+	justify-content: center;
+	text-align: center;
+	padding: 8px;
+}
+
+/*  tablet mait styles */
+table {
+	border-collapse: collapse;
+}
+
+td,
+th {
+	border: 1px solid black;
+	padding: 8px;
+}
+
+.my-table td:nth-child(2) {
+	overflow-wrap: break-word;
+}
+
+.my-table td:nth-child(3) {
+	margin: 0px 10px;
+	white-space: nowrap;
+	width: 150px;
+}
+.my-table td:nth-child(4) {
+	margin: 0;
+	padding: 0;
+}
+
+.num-link {
+	text-decoration: none;
+}
+
+/* pupup */
+
+#popup {
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	padding: 20px;
+	background-color: #f00;
+	color: aliceblue;
+	border: 1px solid #000;
+	display: none;
+}
+
+footer {
+	background: #000;
+	margin-top: auto;
+	color: #fff;
+	text-align: center;
+	padding: 8;
+}
